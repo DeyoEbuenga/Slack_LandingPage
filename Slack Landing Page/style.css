@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background: #F4EDE4;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 10vh 70vh 20vh;
+    grid-template-areas:
+    "logo nav"
+    "txt img"
+    "footerimg footerimg" ;
+}
+
+.logo_coont{
+    width: 30%;
+}
+
+.logo{
+    grid-area: logo;
+    width: 12%;
+    position: relative;
+    top: 20%;
+    left: 7%;
+}
+
+nav{
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    top: 20%;
+    left: -10%;
+}
+
+nav a{
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+    padding-left: 3em;
+    position: relative;
+    left: -10%;
+}
+
+nav button{
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 0.9em;
+    color: #611F69;
+    letter-spacing: 0.1em;
+    border: 1px solid #611F69;
+    border-radius: 0.2em;
+    background: transparent;
+    padding: 1em;
+}
+
+.text{
+    grid-area: txt;
+    display: block;
+    width: 80%;
+    position: relative;
+    top: 15%;
+    left: 7%;
+}
+
+.text h1{
+    font-size: 4em;
+    font-weight: 900;
+}
+
+.text ul li{
+    line-height: 1.5em;
+    width: 90%;
+    padding: 0.2em 0;
+    list-style: none;
+    font-size: 1.1em;
+    font-weight: 100;
+}
+
+.text ul li:before {
+    content: "✓";
+    padding-right: 5px;
+    color:#000 !important; 
+}
+
+.text ul li a{
+    text-decoration: none;
+    border-bottom: 0.15em dotted;
+    color: #000000;
+}
+
+.text button{
+    font-size: 1em;
+    border-radius:0.1em;
+    color: #FFFFFF;
+    background: #611F69;
+    padding: 1em;
+    border: 1px  solid #611F69;
+    border-radius: 0.4em;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+
+.text p{
+    padding-top: 1em;
+    color: #696969;
+}
+
+.text p a{
+    color: #696969;
+}
+
+.img img{
+    width: 100%;
+    position: relative;
+    top: 17%;
+    left: -14%;
+}
+
+.footer{
+    grid-area: footerimg;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+    
+}
+
+.footer img{
+    width: 60%;
+    position: relative;
+    top: 40%;
+    left: 55%;
+}
